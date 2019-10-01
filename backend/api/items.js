@@ -2,13 +2,13 @@ const { query } = require("express-validator");
 const { defineValidator } = require("./util/validation");
 const mercadoLibreInterop = require("../interop/mercadoLibre");
 
-async function items(req, res) {
+async function items(req, res, next) {
 	try {
 		const query = req.query.q;
 		const response = await mercadoLibreInterop.queryItems(query);
 		res.json(response);
 	} catch (error) {
-		console.error(error);
+		next(error);
 	}
 }
 

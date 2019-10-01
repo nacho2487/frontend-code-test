@@ -1,8 +1,5 @@
 const axios = require("axios").default;
-
-// https://api.mercadolibre.com/sites/MLA/search?q=​:query
-// https://api.mercadolibre.com/items/​:id
-// https://api.mercadolibre.com/items/​:id​/description
+const logger = require("../logging/logger");
 
 async function queryItems(query) {
 	return await fetchMercadoLibreApi(
@@ -25,8 +22,11 @@ async function fetchMercadoLibreApi(url) {
 		const response = await axios.get(url);
 		return response.data;
 	} catch (e) {
-		console.error(e);
-		return null;
+		logger.error(
+			`Error fetching data from MercadoLibre's endpoint (${url})`,
+			e
+		);
+		throw e;
 	}
 }
 

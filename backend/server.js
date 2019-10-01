@@ -3,19 +3,19 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const router = require("./api/router");
 const httpLogger = require("morgan");
+const appLogger = require("./logging/logger");
 
 const isProduction = process.env.NODE_ENV === "production";
 
 const app = express();
 const port = process.env.PORT || 5000;
 
-const httpLoggerFormat = isProduction ? "combined" : "dev";
-app.use(httpLogger(httpLoggerFormat));
+app.use(httpLogger("combined", { stream: appLogger.stream }));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(port, () => appLogger.info(`Listening on port ${port}`));
 
 app.use("/api", router);
 
@@ -28,3 +28,21 @@ if (isProduction) {
 		res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
 	});
 }
+
+// Custom error handling
+app.use(function(err, req, res, next) {
+	res.locals.message = err.message;
+	res.locals.error = isProduction ? {} : err;
+
+	appLogger.error(
+		`${err.status || 500} - ${err.message} - ${req.originalUrl} - ${
+			req.method
+		} - ${req.ip}`
+	);
+
+	// render the error page
+	res.status(err.status || 500);
+	res.json({
+		error: "There was an unexpected error while processing your request"
+	});
+});
