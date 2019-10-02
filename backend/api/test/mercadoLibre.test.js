@@ -1,5 +1,7 @@
 const mercadoLibreInterop = require("../../interop/mercadoLibre");
 const mlQueryItemsResponse = require("./fixtures/mercado-libre-query-items-response.json");
+const mlItemResponse = require("./fixtures/mercado-libre-item-response.json");
+const mlItemDescriptionResponse = require("./fixtures/mercado-libre-item-description-response.json");
 
 describe("MercadoLibre response mapping", () => {
 	it("should map MercadoLibre query items response", () => {
@@ -47,6 +49,26 @@ describe("MercadoLibre response mapping", () => {
 					free_shipping: false
 				}
 			]
+		});
+	});
+
+	it("should map MercadoLibre item response", () => {
+		const mappedResponse = mercadoLibreInterop.mapGetItem(
+			mlItemResponse,
+			mlItemDescriptionResponse
+		);
+		expect(mappedResponse).toEqual({
+			author: { name: "nico", lastname: "card" },
+			item: {
+				id: "MLA688322496",
+				title: "Zapatos De Vestir Hombre Charol Importados Fiesta Eco Cuero ",
+				price: { currency: "ARS", amount: 1690, decimals: 0 },
+				picture:
+					"http://mla-s1-p.mlstatic.com/908135-MLA31018116481_062019-I.jpg",
+				condition: "new",
+				free_shipping: false,
+				description: "Diseñador: Simón de la Costa"
+			}
 		});
 	});
 });

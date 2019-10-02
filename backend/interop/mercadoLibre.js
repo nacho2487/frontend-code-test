@@ -21,7 +21,7 @@ async function getItemById(id) {
 }
 
 function getMercadoLibreItemByIdUrl({ id }) {
-	return `https://api.mercadolibre.com/sites/MLA/search?q=${id}`;
+	return `https://api.mercadolibre.com/items/${id}`;
 }
 
 async function getItemDescriptionById(id) {
@@ -60,6 +60,16 @@ function mapQueryItems(response) {
 	};
 }
 
+function mapGetItem(itemResponse, descriptionResponse) {
+	return {
+		author: AUTHOR,
+		item: {
+			...mapItem(itemResponse),
+			description: descriptionResponse.plain_text
+		}
+	};
+}
+
 function mapItem({
 	condition,
 	currency_id,
@@ -89,6 +99,7 @@ module.exports = {
 	getMercadoLibreDescriptionByIdUrl,
 	getMercadoLibreItemByIdUrl,
 	getMercadoLibreQueryItemsUrl,
+	mapGetItem,
 	mapQueryItems,
 	queryItems
 };
