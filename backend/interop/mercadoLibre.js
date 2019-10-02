@@ -1,6 +1,11 @@
 const axios = require("axios").default;
 const logger = require("../logging/logger");
 
+const AUTHOR = {
+	name: "nico",
+	lastname: "card"
+};
+
 const QUERY_ITEMS_LIMIT = 4;
 
 async function queryItems(query) {
@@ -41,11 +46,49 @@ async function fetchMercadoLibreApi(url) {
 	}
 }
 
+function mapQueryItems(response) {
+	const categoryFilter = response.filters.find(
+		filter => filter.id === "category"
+	);
+	const categories =
+		categoryFilter && categoryFilter.values.map(category => category.name);
+
+	return {
+		author: AUTHOR,
+		categories,
+		items: response.results.map(mapItem)
+	};
+}
+
+function mapItem({
+	condition,
+	currency_id,
+	id,
+	price,
+	shipping,
+	thumbnail,
+	title
+}) {
+	return {
+		id,
+		title,
+		price: {
+			currency: currency_id,
+			amount: price,
+			decimals: 0 // Averiguar de qué se trata esta propiedad
+		},
+		picture: thumbnail,
+		condition,
+		free_shipping: shipping.free_shipping
+	};
+}
+
 module.exports = {
 	getItemById,
 	getItemDescriptionById,
 	getMercadoLibreDescriptionByIdUrl,
 	getMercadoLibreItemByIdUrl,
 	getMercadoLibreQueryItemsUrl,
+	mapQueryItems,
 	queryItems
 };

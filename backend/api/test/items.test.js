@@ -20,6 +20,9 @@ describe("GET /api/items?q=​:query", () => {
 
 		const res = await request(app).get(`/api/items?q=${query}`);
 		expect(res.statusCode).toEqual(200);
+		expect(res.body).toHaveProperty("author");
+		expect(res.body).toHaveProperty("categories");
+		expect(res.body).toHaveProperty("items");
 		expect(res.body.items).toHaveLength(4);
 		done();
 	});
