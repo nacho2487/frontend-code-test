@@ -3,11 +3,12 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"frontend": "cd frontend && npm start",
-		"dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\"",
-		"postinstall": "cd frontend && npm install",
 		"backend": "nodemon backend/server.js",
-		"start": "node backend/server.js"
+		"dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\"",
+		"frontend": "cd frontend && npm start",
+		"postinstall": "cd frontend && npm install",
+		"start": "node backend/server.js",
+		"test": "jest --forceExit"
 	},
 	"dependencies": {
 		"app-root-path": "^2.2.1",
@@ -19,8 +20,11 @@
 		"winston": "^3.2.1"
 	},
 	"devDependencies": {
+		"axios-mock-adapter": "^1.17.0",
 		"concurrently": "^4.0.1",
-		"nodemon": "^1.19.1"
+		"jest": "^24.9.0",
+		"nodemon": "^1.19.1",
+		"supertest": "^4.0.2"
 	},
 	"repository": {
 		"type": "git",
@@ -31,5 +35,14 @@
 	"bugs": {
 		"url": "https://github.com/nicocard/frontend-code-test/issues"
 	},
-	"homepage": "https://github.com/nicocard/frontend-code-test#readme"
+	"homepage": "https://github.com/nicocard/frontend-code-test#readme",
+	"jest": {
+		"testEnvironment": "node",
+		"coveragePathIgnorePatterns": [
+			"/node_modules/"
+		],
+		"testPathIgnorePatterns": [
+			"/frontend/"
+		]
+	}
 }

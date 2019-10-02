@@ -1,8 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
-const router = require("./api/router");
 const httpLogger = require("morgan");
+const router = require("./api/router");
 const appLogger = require("./logging/logger");
 
 const isProduction = process.env.NODE_ENV === "production";
@@ -42,7 +42,18 @@ app.use(function(err, req, res, next) {
 
 	// render the error page
 	res.status(err.status || 500);
-	res.json({
+	const errorOutput = {
 		error: "There was an unexpected error while processing your request"
-	});
+	};
+
+	if (isProduction) {
+		res.json(errorOutput);
+	} else {
+		res.json({
+			...errorOutput,
+			stack: err.stack
+		});
+	}
 });
+
+module.exports = app;

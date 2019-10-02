@@ -1,0 +1,670 @@
+{
+	"site_id": "MLA",
+	"query": "zapato",
+	"paging": {
+		"total": 68883,
+		"offset": 0,
+		"limit": 4,
+		"primary_results": 1000
+	},
+	"results": [
+		{
+			"id": "MLA688322496",
+			"site_id": "MLA",
+			"title": "Zapatos De Vestir Hombre Charol Importados Fiesta Eco Cuero ",
+			"seller": {
+				"id": 104862063,
+				"power_seller_status": "platinum",
+				"car_dealer": false,
+				"real_estate_agency": false,
+				"tags": []
+			},
+			"price": 1690,
+			"currency_id": "ARS",
+			"available_quantity": 5000,
+			"sold_quantity": 500,
+			"buying_mode": "buy_it_now",
+			"listing_type_id": "gold_special",
+			"stop_time": "2037-10-15T12:08:00.000Z",
+			"condition": "new",
+			"permalink": "https://articulo.mercadolibre.com.ar/MLA-688322496-zapatos-de-vestir-hombre-charol-importados-fiesta-eco-cuero-_JM",
+			"thumbnail": "http://mla-s1-p.mlstatic.com/908135-MLA31018116481_062019-I.jpg",
+			"accepts_mercadopago": true,
+			"installments": {
+				"quantity": 12,
+				"amount": 230.64,
+				"rate": 63.77,
+				"currency_id": "ARS"
+			},
+			"address": {
+				"state_id": "AR-C",
+				"state_name": "Capital Federal",
+				"city_id": null,
+				"city_name": "C.A.B.A."
+			},
+			"shipping": {
+				"free_shipping": false,
+				"mode": "me2",
+				"tags": [],
+				"logistic_type": "cross_docking",
+				"store_pick_up": false
+			},
+			"seller_address": {
+				"id": "",
+				"comment": "",
+				"address_line": "",
+				"zip_code": "",
+				"country": { "id": "AR", "name": "Argentina" },
+				"state": { "id": "AR-C", "name": "Capital Federal" },
+				"city": { "id": null, "name": "C.A.B.A." },
+				"latitude": "",
+				"longitude": ""
+			},
+			"attributes": [
+				{
+					"id": "BRAND",
+					"name": "Marca",
+					"value_id": null,
+					"value_name": "Mocasines y Oxfords",
+					"value_struct": null,
+					"attribute_group_id": "OTHERS",
+					"attribute_group_name": "Otros",
+					"source": 1
+				},
+				{
+					"source": 1577,
+					"id": "ITEM_CONDITION",
+					"name": "Condición del ítem",
+					"value_id": "2230284",
+					"value_name": "Nuevo",
+					"value_struct": null,
+					"attribute_group_id": "OTHERS",
+					"attribute_group_name": "Otros"
+				},
+				{
+					"attribute_group_name": "Otros",
+					"source": 1577,
+					"id": "MODEL",
+					"name": "Modelo",
+					"value_id": null,
+					"value_name": "Charol",
+					"value_struct": null,
+					"attribute_group_id": "OTHERS"
+				}
+			],
+			"original_price": null,
+			"category_id": "MLA414674",
+			"official_store_id": null,
+			"catalog_product_id": null,
+			"tags": [
+				"loyalty_discount_eligible",
+				"good_quality_picture",
+				"good_quality_thumbnail",
+				"immediate_payment",
+				"cart_eligible"
+			]
+		},
+		{
+			"id": "MLA622676901",
+			"site_id": "MLA",
+			"title": "Customs Ba Zapatos Hombre Botitas Vestir Botas Cuero Ec Full",
+			"seller": {
+				"id": 211096341,
+				"power_seller_status": "platinum",
+				"car_dealer": false,
+				"real_estate_agency": false,
+				"tags": []
+			},
+			"price": 1950,
+			"currency_id": "ARS",
+			"available_quantity": 1,
+			"sold_quantity": 250,
+			"buying_mode": "buy_it_now",
+			"listing_type_id": "gold_special",
+			"stop_time": "2038-06-22T12:12:53.000Z",
+			"condition": "new",
+			"permalink": "https://articulo.mercadolibre.com.ar/MLA-622676901-customs-ba-zapatos-hombre-botitas-vestir-botas-cuero-ec-full-_JM",
+			"thumbnail": "http://mla-s2-p.mlstatic.com/811424-MLA31241761908_062019-I.jpg",
+			"accepts_mercadopago": true,
+			"installments": {
+				"quantity": 12,
+				"amount": 266.13,
+				"rate": 63.77,
+				"currency_id": "ARS"
+			},
+			"address": {
+				"state_id": "AR-C",
+				"state_name": "Capital Federal",
+				"city_id": "TUxBQlBBTDI1MTVa",
+				"city_name": "Palermo"
+			},
+			"shipping": {
+				"free_shipping": true,
+				"mode": "me2",
+				"tags": ["fulfillment"],
+				"logistic_type": "fulfillment",
+				"store_pick_up": false
+			},
+			"seller_address": {
+				"id": "",
+				"comment": "",
+				"address_line": "",
+				"zip_code": "",
+				"country": { "id": "AR", "name": "Argentina" },
+				"state": { "id": "AR-C", "name": "Capital Federal" },
+				"city": { "id": "TUxBQlBBTDI1MTVa", "name": "Palermo" },
+				"latitude": "",
+				"longitude": ""
+			},
+			"attributes": [
+				{
+					"value_id": "2631275",
+					"value_name": "Customs Ba",
+					"value_struct": null,
+					"attribute_group_id": "OTHERS",
+					"attribute_group_name": "Otros",
+					"source": 510278957040621,
+					"id": "BRAND",
+					"name": "Marca"
+				},
+				{
+					"value_struct": null,
+					"attribute_group_id": "OTHERS",
+					"attribute_group_name": "Otros",
+					"source": 1,
+					"id": "ITEM_CONDITION",
+					"name": "Condición del ítem",
+					"value_id": "2230284",
+					"value_name": "Nuevo"
+				},
+				{
+					"id": "MODEL",
+					"name": "Modelo",
+					"value_id": null,
+					"value_name": "Zapato Detroit Negro",
+					"value_struct": null,
+					"attribute_group_id": "OTHERS",
+					"attribute_group_name": "Otros",
+					"source": 1577
+				}
+			],
+			"original_price": 3900,
+			"category_id": "MLA414251",
+			"official_store_id": null,
+			"catalog_product_id": null,
+			"tags": [
+				"good_quality_picture",
+				"good_quality_thumbnail",
+				"immediate_payment",
+				"cart_eligible"
+			]
+		},
+		{
+			"id": "MLA745531777",
+			"site_id": "MLA",
+			"title": "Zapato Zapatilla Mujer Blanca Sneaker Urbana Plataforma Moda",
+			"seller": {
+				"id": 272745908,
+				"power_seller_status": "platinum",
+				"car_dealer": false,
+				"real_estate_agency": false,
+				"tags": []
+			},
+			"price": 1599,
+			"currency_id": "ARS",
+			"available_quantity": 100,
+			"sold_quantity": 500,
+			"buying_mode": "buy_it_now",
+			"listing_type_id": "gold_special",
+			"stop_time": "2038-12-03T19:26:43.000Z",
+			"condition": "new",
+			"permalink": "https://articulo.mercadolibre.com.ar/MLA-745531777-zapato-zapatilla-mujer-blanca-sneaker-urbana-plataforma-moda-_JM",
+			"thumbnail": "http://mla-s2-p.mlstatic.com/987401-MLA31123862015_062019-I.jpg",
+			"accepts_mercadopago": true,
+			"installments": {
+				"quantity": 12,
+				"amount": 218.22,
+				"rate": 63.77,
+				"currency_id": "ARS"
+			},
+			"address": {
+				"state_id": "AR-B",
+				"state_name": "Buenos Aires",
+				"city_id": null,
+				"city_name": "Buenos Aires"
+			},
+			"shipping": {
+				"free_shipping": false,
+				"mode": "me2",
+				"tags": ["fulfillment"],
+				"logistic_type": "fulfillment",
+				"store_pick_up": false
+			},
+			"seller_address": {
+				"id": "",
+				"comment": "",
+				"address_line": "",
+				"zip_code": "",
+				"country": { "id": "AR", "name": "Argentina" },
+				"state": { "id": "AR-B", "name": "Buenos Aires" },
+				"city": { "id": null, "name": "Buenos Aires" },
+				"latitude": "",
+				"longitude": ""
+			},
+			"attributes": [
+				{
+					"attribute_group_id": "OTHERS",
+					"attribute_group_name": "Otros",
+					"source": 3376461333454861,
+					"id": "BRAND",
+					"name": "Marca",
+					"value_id": null,
+					"value_name": "Poppys",
+					"value_struct": null
+				},
+				{
+					"name": "Condición del ítem",
+					"value_id": "2230284",
+					"value_name": "Nuevo",
+					"value_struct": null,
+					"attribute_group_id": "OTHERS",
+					"attribute_group_name": "Otros",
+					"source": 1572,
+					"id": "ITEM_CONDITION"
+				},
+				{
+					"value_id": null,
+					"value_name": "Urbana",
+					"value_struct": null,
+					"attribute_group_id": "OTHERS",
+					"attribute_group_name": "Otros",
+					"source": 1572,
+					"id": "LINE",
+					"name": "Línea"
+				},
+				{
+					"value_struct": null,
+					"attribute_group_id": "OTHERS",
+					"attribute_group_name": "Otros",
+					"source": 3376461333454861,
+					"id": "MODEL",
+					"name": "Modelo",
+					"value_id": null,
+					"value_name": "799"
+				}
+			],
+			"original_price": null,
+			"category_id": "MLA109027",
+			"official_store_id": null,
+			"catalog_product_id": null,
+			"tags": [
+				"brand_verified",
+				"good_quality_picture",
+				"good_quality_thumbnail",
+				"loyalty_discount_eligible",
+				"immediate_payment",
+				"cart_eligible"
+			]
+		},
+		{
+			"id": "MLA618293338",
+			"site_id": "MLA",
+			"title": "Zapato De Vestir De Hombre Simil Cuero (art. 1241/12)",
+			"seller": {
+				"id": 204836649,
+				"power_seller_status": "platinum",
+				"car_dealer": false,
+				"real_estate_agency": false,
+				"tags": []
+			},
+			"price": 1378,
+			"currency_id": "ARS",
+			"available_quantity": 500,
+			"sold_quantity": 500,
+			"buying_mode": "buy_it_now",
+			"listing_type_id": "gold_pro",
+			"stop_time": "2037-12-19T20:03:58.000Z",
+			"condition": "new",
+			"permalink": "https://articulo.mercadolibre.com.ar/MLA-618293338-zapato-de-vestir-de-hombre-simil-cuero-art-124112-_JM",
+			"thumbnail": "http://mla-s1-p.mlstatic.com/792057-MLA31112647287_062019-I.jpg",
+			"accepts_mercadopago": true,
+			"installments": {
+				"quantity": 6,
+				"amount": 229.67,
+				"rate": 0,
+				"currency_id": "ARS"
+			},
+			"address": {
+				"state_id": "AR-C",
+				"state_name": "Capital Federal",
+				"city_id": null,
+				"city_name": "Once"
+			},
+			"shipping": {
+				"free_shipping": false,
+				"mode": "me2",
+				"tags": [],
+				"logistic_type": "cross_docking",
+				"store_pick_up": false
+			},
+			"seller_address": {
+				"id": "",
+				"comment": "",
+				"address_line": "",
+				"zip_code": "",
+				"country": { "id": "AR", "name": "Argentina" },
+				"state": { "id": "AR-C", "name": "Capital Federal" },
+				"city": { "id": null, "name": "Once" },
+				"latitude": "",
+				"longitude": ""
+			},
+			"attributes": [
+				{
+					"source": 1577,
+					"id": "BRAND",
+					"name": "Marca",
+					"value_id": null,
+					"value_name": "Mocasines y Oxfords",
+					"value_struct": null,
+					"attribute_group_id": "OTHERS",
+					"attribute_group_name": "Otros"
+				},
+				{
+					"source": 1,
+					"id": "ITEM_CONDITION",
+					"name": "Condición del ítem",
+					"value_id": "2230284",
+					"value_name": "Nuevo",
+					"value_struct": null,
+					"attribute_group_id": "OTHERS",
+					"attribute_group_name": "Otros"
+				},
+				{
+					"name": "Modelo",
+					"value_id": "527163",
+					"value_name": "1241",
+					"value_struct": null,
+					"attribute_group_id": "OTHERS",
+					"attribute_group_name": "Otros",
+					"source": 1577,
+					"id": "MODEL"
+				}
+			],
+			"differential_pricing": { "id": 33669181 },
+			"original_price": null,
+			"category_id": "MLA414674",
+			"official_store_id": null,
+			"catalog_product_id": "MLA13157527",
+			"tags": [
+				"good_quality_picture",
+				"good_quality_thumbnail",
+				"loyalty_discount_eligible",
+				"immediate_payment",
+				"cart_eligible"
+			]
+		}
+	],
+	"secondary_results": [],
+	"related_results": [],
+	"sort": { "id": "relevance", "name": "Más relevantes" },
+	"available_sorts": [
+		{ "id": "price_asc", "name": "Menor precio" },
+		{ "id": "price_desc", "name": "Mayor precio" }
+	],
+	"filters": [
+		{
+			"id": "category",
+			"name": "Categorías",
+			"type": "text",
+			"values": [
+				{
+					"id": "MLA109026",
+					"name": "Calzado",
+					"path_from_root": [
+						{ "id": "MLA1430", "name": "Ropa y Accesorios" },
+						{ "id": "MLA109026", "name": "Calzado" }
+					]
+				}
+			]
+		}
+	],
+	"available_filters": [
+		{
+			"id": "category",
+			"name": "Categorías",
+			"type": "text",
+			"values": [
+				{ "id": "MLA414674", "name": "Mocasines y Oxfords", "results": 12640 },
+				{ "id": "MLA414251", "name": "Botas y Botinetas", "results": 6757 },
+				{ "id": "MLA109027", "name": "Zapatillas", "results": 1106 },
+				{
+					"id": "MLA415194",
+					"name": "Stilletos y Plataformas",
+					"results": 14311
+				},
+				{ "id": "MLA416005", "name": "Sandalias y Ojotas", "results": 5743 },
+				{ "id": "MLA415192", "name": "Chatitas", "results": 3907 },
+				{ "id": "MLA415445", "name": "Zuecos y Mules", "results": 1190 },
+				{ "id": "MLA414673", "name": "Alpargatas", "results": 84 },
+				{ "id": "MLA414610", "name": "Pantuflas", "results": 42 },
+				{ "id": "MLA415193", "name": "Otros Zapatos", "results": 23102 }
+			]
+		},
+		{
+			"id": "official_store",
+			"name": "Tiendas oficiales",
+			"type": "text",
+			"values": [
+				{ "id": "all", "name": "Todas las tiendas oficiales", "results": 1148 }
+			]
+		},
+		{
+			"id": "discount",
+			"name": "Descuentos",
+			"type": "range",
+			"values": [
+				{ "id": "10-100", "name": "Desde 10% off", "results": 2674 },
+				{ "id": "20-100", "name": "Desde 20% off", "results": 2070 },
+				{ "id": "30-100", "name": "Desde 30% off", "results": 1788 },
+				{ "id": "40-100", "name": "Desde 40% off", "results": 198 }
+			]
+		},
+		{
+			"id": "state",
+			"name": "Ubicación",
+			"type": "text",
+			"values": [
+				{
+					"id": "TUxBUENBUGw3M2E1",
+					"name": "Capital Federal",
+					"results": 33145
+				},
+				{
+					"id": "TUxBUEdSQWU4ZDkz",
+					"name": "Bs.As. G.B.A. Norte",
+					"results": 9923
+				},
+				{
+					"id": "TUxBUEdSQXJlMDNm",
+					"name": "Bs.As. G.B.A. Sur",
+					"results": 7343
+				},
+				{
+					"id": "TUxBUEdSQWVmNTVm",
+					"name": "Bs.As. G.B.A. Oeste",
+					"results": 7324
+				},
+				{
+					"id": "TUxBUFpPTmFpbnRl",
+					"name": "Buenos Aires Interior",
+					"results": 1974
+				},
+				{ "id": "TUxBUENPUmFkZGIw", "name": "Córdoba", "results": 1420 },
+				{ "id": "TUxBUFNBTmU5Nzk2", "name": "Santa Fe", "results": 1274 },
+				{ "id": "TUxBUE1FTmE5OWQ4", "name": "Mendoza", "results": 1176 },
+				{
+					"id": "TUxBUENPU2ExMmFkMw",
+					"name": "Bs.As. Costa Atlántica",
+					"results": 813
+				},
+				{ "id": "TUxBUENIQW8xMTNhOA", "name": "Chaco", "results": 392 },
+				{ "id": "TUxBUE1JU3MzNjIx", "name": "Misiones", "results": 378 },
+				{ "id": "TUxBUEVOVHMzNTdm", "name": "Entre Ríos", "results": 378 },
+				{ "id": "TUxBUENPUnM5MjI0", "name": "Corrientes", "results": 224 },
+				{ "id": "TUxBUE5FVW4xMzMzNQ", "name": "Neuquén", "results": 210 },
+				{ "id": "TUxBUFLNT29iZmZm", "name": "Río Negro", "results": 168 },
+				{ "id": "TUxBUFNBTm5lYjU4", "name": "San Juan", "results": 168 },
+				{ "id": "TUxBUENIVXQxNDM1MQ", "name": "Chubut", "results": 140 },
+				{ "id": "TUxBUEpVSnk3YmUz", "name": "Jujuy", "results": 140 },
+				{ "id": "TUxBUFNBTGFjMTJi", "name": "Salta", "results": 126 },
+				{ "id": "TUxBUFRVQ244NmM3", "name": "Tucumán", "results": 112 },
+				{ "id": "TUxBUEZPUmE1OTk5", "name": "Formosa", "results": 98 },
+				{ "id": "TUxBUFNBTno3ZmY5", "name": "Santa Cruz", "results": 84 },
+				{
+					"id": "TUxBUFNBTm9lOTlk",
+					"name": "Santiago del Estero",
+					"results": 70
+				},
+				{ "id": "TUxBUFNBTnM0ZTcz", "name": "San Luis", "results": 70 },
+				{ "id": "TUxBUExBWmE1OWMy", "name": "La Pampa", "results": 42 },
+				{ "id": "TUxBUENBVGFiY2Fm", "name": "Catamarca", "results": 14 },
+				{ "id": "TUxBUExBWmEyNzY0", "name": "La Rioja", "results": 14 }
+			]
+		},
+		{
+			"id": "price",
+			"name": "Precio",
+			"type": "range",
+			"values": [
+				{ "id": "*-800.0", "name": "Hasta $ 800", "results": 20666 },
+				{ "id": "800.0-1500.0", "name": "$800 a $1.500", "results": 16057 },
+				{ "id": "1500.0-*", "name": "Más de $1.500", "results": 32159 }
+			]
+		},
+		{
+			"id": "accepts_mercadopago",
+			"name": "Filtro por MercadoPago",
+			"type": "boolean",
+			"values": [{ "id": "yes", "name": "Con MercadoPago", "results": 68882 }]
+		},
+		{
+			"id": "installments",
+			"name": "Pago",
+			"type": "text",
+			"values": [
+				{ "id": "yes", "name": "En cuotas", "results": 68854 },
+				{ "id": "no_interest", "name": "Sin interés", "results": 9002 }
+			]
+		},
+		{
+			"id": "shipping",
+			"name": "Tipo de entrega",
+			"type": "text",
+			"values": [
+				{ "id": "mercadoenvios", "name": "Con envío", "results": 64990 },
+				{ "id": "fulfillment", "name": "Full", "results": 49 }
+			]
+		},
+		{
+			"id": "power_seller",
+			"name": "Filtro por calidad de vendedores",
+			"type": "boolean",
+			"values": [
+				{ "id": "yes", "name": "Mejores vendedores", "results": 11855 }
+			]
+		},
+		{
+			"id": "since",
+			"name": "Filtro por fecha de comienzo",
+			"type": "text",
+			"values": [{ "id": "today", "name": "Publicados hoy", "results": 294 }]
+		},
+		{
+			"id": "until",
+			"name": "Filtro por fecha de finalización",
+			"type": "text",
+			"values": [{ "id": "today", "name": "Finalizan hoy", "results": 98 }]
+		},
+		{
+			"id": "has_video",
+			"name": "Filtro por publicaciones con video",
+			"type": "boolean",
+			"values": [
+				{ "id": "yes", "name": "Publicaciones con video", "results": 2084 }
+			]
+		},
+		{
+			"id": "has_pictures",
+			"name": "Filtro por publicaciones con imágenes",
+			"type": "boolean",
+			"values": [{ "id": "yes", "name": "Con fotos", "results": 68868 }]
+		},
+		{
+			"id": "shipping_cost",
+			"name": "Costo de envío",
+			"type": "text",
+			"values": [{ "id": "free", "name": "Gratis", "results": 21517 }]
+		},
+		{
+			"id": "ITEM_CONDITION",
+			"name": "Condición",
+			"type": "STRING",
+			"values": [
+				{ "id": "2230284", "name": "Nuevo", "results": 38892 },
+				{ "id": "2230581", "name": "Usado", "results": 30464 }
+			]
+		},
+		{
+			"id": "MAIN_COLOR",
+			"name": "Color principal",
+			"type": "list",
+			"values": [
+				{ "id": "2450295", "name": "Negro", "results": 41272 },
+				{ "id": "2450291", "name": "Marrón", "results": 10696 },
+				{ "id": "2450308", "name": "Blanco", "results": 5488 },
+				{ "id": "2450307", "name": "Rojo", "results": 3108 },
+				{ "id": "2450286", "name": "Nude", "results": 2646 },
+				{ "id": "2450293", "name": "Azul", "results": 2562 },
+				{ "id": "2450303", "name": "Plateado", "results": 2324 },
+				{ "id": "2450312", "name": "Rosa", "results": 1904 },
+				{ "id": "2450299", "name": "Gris oscuro", "results": 1512 },
+				{ "id": "2450289", "name": "Dorado", "results": 1330 },
+				{ "id": "2450280", "name": "Rosa claro", "results": 1078 },
+				{ "id": "2450309", "name": "Dorado oscuro", "results": 1064 },
+				{ "id": "2450322", "name": "Bordó", "results": 1050 },
+				{ "id": "2450281", "name": "Beige", "results": 966 },
+				{ "id": "2450292", "name": "Marrón claro", "results": 882 },
+				{ "id": "2450287", "name": "Suela", "results": 840 },
+				{ "id": "2450314", "name": "Verde", "results": 812 },
+				{ "id": "2450325", "name": "Azul marino", "results": 658 },
+				{ "id": "2450294", "name": "Gris", "results": 602 },
+				{ "id": "2450304", "name": "Ocre", "results": 476 },
+				{ "id": "2450326", "name": "Fucsia", "results": 448 },
+				{ "id": "2450296", "name": "Amarillo", "results": 448 },
+				{ "id": "2450327", "name": "Naranja", "results": 364 },
+				{ "id": "2450297", "name": "Marrón oscuro", "results": 280 },
+				{ "id": "2450306", "name": "Azul oscuro", "results": 238 },
+				{ "id": "2450278", "name": "Celeste", "results": 224 },
+				{ "id": "2450310", "name": "Verde musgo", "results": 210 },
+				{ "id": "2450318", "name": "Coral", "results": 196 },
+				{ "id": "2450311", "name": "Violeta", "results": 182 },
+				{ "id": "2450300", "name": "Crema", "results": 182 },
+				{ "id": "2450298", "name": "Azul claro", "results": 182 },
+				{ "id": "2450282", "name": "Chocolate", "results": 182 },
+				{ "id": "2450302", "name": "Azul acero", "results": 140 },
+				{ "id": "2450313", "name": "Coral claro", "results": 126 },
+				{ "id": "2450290", "name": "Violeta oscuro", "results": 126 },
+				{ "id": "2450328", "name": "Naranja oscuro", "results": 112 },
+				{ "id": "2450301", "name": "Caqui", "results": 112 },
+				{ "id": "2450285", "name": "Rosa oscuro", "results": 98 },
+				{ "id": "2450323", "name": "Naranja claro", "results": 84 },
+				{ "id": "2450288", "name": "Azul petróleo", "results": 84 },
+				{ "id": "2450319", "name": "Verde claro", "results": 56 },
+				{ "id": "2450283", "name": "Agua", "results": 56 },
+				{ "id": "2450279", "name": "Índigo", "results": 56 },
+				{ "id": "2450317", "name": "Terracota", "results": 42 },
+				{ "id": "2450284", "name": "Rosa chicle", "results": 42 }
+			]
+		}
+	]
+}
