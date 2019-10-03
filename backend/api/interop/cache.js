@@ -1,5 +1,5 @@
 const NodeCache = require("node-cache");
-const logger = require("../logging/logger");
+const logger = require("../../logging/logger");
 
 class Cache {
 	constructor(ttlSeconds) {

@@ -1,6 +1,6 @@
 const axios = require("axios");
 const MockAdapter = require("axios-mock-adapter");
-const mercadoLibreInterop = require("../../interop/mercadoLibre");
+const mercadoLibreInterop = require("../interop/mercadoLibre");
 const mlQueryItemsResponse = require("./fixtures/mercado-libre-query-items-response.json");
 const mlItemResponse = require("./fixtures/mercado-libre-item-response.json");
 const mlItemDescriptionResponse = require("./fixtures/mercado-libre-item-description-response.json");

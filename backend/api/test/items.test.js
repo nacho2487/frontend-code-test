@@ -3,7 +3,7 @@ const axios = require("axios");
 const MockAdapter = require("axios-mock-adapter");
 const app = require("../../server");
 const fixtureData = require("./fixtures/mercado-libre-query-items-response.json");
-const { getMercadoLibreQueryItemsUrl } = require("../../interop/mercadoLibre");
+const { getMercadoLibreQueryItemsUrl } = require("../interop/mercadoLibre");
 
 describe("GET /api/items?q=​:query", () => {
 	it("should return an error when no query is specified", async () => {

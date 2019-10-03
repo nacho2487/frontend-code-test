@@ -1,5 +1,5 @@
 const axios = require("axios").default;
-const logger = require("../logging/logger");
+const logger = require("../../logging/logger");
 const Cache = require("./cache");
 
 const AUTHOR = {

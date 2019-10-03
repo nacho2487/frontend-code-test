@@ -7,7 +7,7 @@ const descriptionFixtureData = require("./fixtures/mercado-libre-item-descriptio
 const {
 	getMercadoLibreDescriptionByIdUrl,
 	getMercadoLibreItemByIdUrl
-} = require("../../interop/mercadoLibre");
+} = require("../interop/mercadoLibre");
 
 describe("GET /api/items/:id", () => {
 	it("should return an error when no id is specified", async () => {

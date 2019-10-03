@@ -1,7 +1,7 @@
 const { query } = require("express-validator");
 const { defineValidator } = require("./util/validation");
 const errorHandler = require("./util/error-handling");
-const mercadoLibreInterop = require("../interop/mercadoLibre");
+const mercadoLibreInterop = require("./interop/mercadoLibre");
 
 async function items(req, res, next) {
 	try {
