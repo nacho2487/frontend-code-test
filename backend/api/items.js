@@ -1,5 +1,6 @@
 const { query } = require("express-validator");
 const { defineValidator } = require("./util/validation");
+const errorHandler = require("./util/error-handling");
 const mercadoLibreInterop = require("../interop/mercadoLibre");
 
 async function items(req, res, next) {
@@ -23,4 +24,4 @@ const itemsValidator = defineValidator([
 		.withMessage("A query must be specified")
 ]);
 
-module.exports = [itemsValidator, items];
+module.exports = [itemsValidator, items, errorHandler];

@@ -46,7 +46,10 @@ app.use(function(err, req, res, next) {
 	// render the error page
 	res.status(err.status || 500);
 	const errorOutput = {
-		error: "There was an unexpected error while processing your request"
+		error:
+			err.outputMessage ||
+			"There was an unexpected error while processing your request",
+		details: err.details || undefined
 	};
 
 	if (isProduction) {
