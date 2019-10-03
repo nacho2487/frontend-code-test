@@ -32,34 +32,4 @@ if (isProduction) {
 	});
 }
 
-// Custom error handling
-app.use(function(err, req, res, next) {
-	res.locals.message = err.message;
-	res.locals.error = isProduction ? {} : err;
-
-	appLogger.error(
-		`${err.status || 500} - ${err.message} - ${req.originalUrl} - ${
-			req.method
-		} - ${req.ip}`
-	);
-
-	// render the error page
-	res.status(err.status || 500);
-	const errorOutput = {
-		error:
-			err.outputMessage ||
-			"There was an unexpected error while processing your request",
-		details: err.details || undefined
-	};
-
-	if (isProduction) {
-		res.json(errorOutput);
-	} else {
-		res.json({
-			...errorOutput,
-			stack: err.stack
-		});
-	}
-});
-
 module.exports = app;
