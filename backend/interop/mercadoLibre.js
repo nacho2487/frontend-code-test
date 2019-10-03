@@ -1,5 +1,6 @@
 const axios = require("axios").default;
 const logger = require("../logging/logger");
+const Cache = require("./cache");
 
 const AUTHOR = {
 	name: "nico",
@@ -7,6 +8,8 @@ const AUTHOR = {
 };
 
 const QUERY_ITEMS_LIMIT = 4;
+
+const cache = new Cache(process.env.CACHE_TTL_SECONDS || 300);
 
 async function queryItems(query) {
 	return await fetchMercadoLibreApi(getMercadoLibreQueryItemsUrl({ query }));
@@ -34,9 +37,12 @@ function getMercadoLibreDescriptionByIdUrl({ id }) {
 
 async function fetchMercadoLibreApi(url) {
 	try {
-		logger.info(`Fetching data from MercadoLibre's endpoint (${url})`);
-		const response = await axios.get(url);
-		return response.data;
+		const result = await cache.get(url, async () => {
+			logger.info(`Fetching data from MercadoLibre's endpoint (${url})`);
+			const response = await axios.get(url);
+			return response.data;
+		});
+		return result;
 	} catch (e) {
 		logger.error(
 			`Error fetching data from MercadoLibre's endpoint (${url})`,
@@ -94,6 +100,7 @@ function mapItem({
 }
 
 module.exports = {
+	fetchMercadoLibreApi,
 	getItemById,
 	getItemDescriptionById,
 	getMercadoLibreDescriptionByIdUrl,

@@ -1,3 +1,5 @@
+const axios = require("axios");
+const MockAdapter = require("axios-mock-adapter");
 const mercadoLibreInterop = require("../../interop/mercadoLibre");
 const mlQueryItemsResponse = require("./fixtures/mercado-libre-query-items-response.json");
 const mlItemResponse = require("./fixtures/mercado-libre-item-response.json");
@@ -70,5 +72,22 @@ describe("MercadoLibre response mapping", () => {
 				description: "Diseñador: Simón de la Costa"
 			}
 		});
+	});
+});
+
+describe("MercadoLibe response caching", () => {
+	it("should return the result from cache", async () => {
+		var mock = new MockAdapter(axios);
+		const url = "/path/to";
+		mock.onGet(url).reply(200, { id: 1 });
+
+		const firstResult = await mercadoLibreInterop.fetchMercadoLibreApi(url);
+
+		// Change the response to the same url
+		mock.onGet(url).reply(200, { id: 2 });
+
+		const secondResult = await mercadoLibreInterop.fetchMercadoLibreApi(url);
+
+		expect(firstResult).toEqual(secondResult);
 	});
 });
