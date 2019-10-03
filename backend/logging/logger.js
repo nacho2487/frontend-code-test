@@ -1,5 +1,6 @@
 const appRoot = require("app-root-path");
 const winston = require("winston");
+const { combine, timestamp, prettyPrint } = winston.format;
 
 const LOG_FILE_PATH = `${appRoot}/logs/app.log`;
 
@@ -22,6 +23,7 @@ const options = {
 };
 
 const logger = winston.createLogger({
+	format: combine(timestamp(), prettyPrint()),
 	transports: [
 		new winston.transports.File(options.file),
 		new winston.transports.Console(options.console)
