@@ -1,0 +1,27 @@
+@import "./mixins";
+
+.bar-search {
+	display: flex;
+	flex-direction: row;
+}
+
+.field-search {
+	flex: 1;
+	font-size: 1.125rem;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.btn-search {
+	flex: 0 0 32px;
+	border-top-right-radius: var(--border-radius-small);
+	border-bottom-right-radius: var(--border-radius-small);
+	@include background-image-density(
+		"../assets/ic_Search.png",
+		"../assets/ic_Search@2x.png",
+		16px,
+		16px
+	);
+	background-position: center center;
+	background-repeat: no-repeat;
+}

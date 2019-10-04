@@ -1,0 +1,12 @@
+@mixin background-image-density($image-1x, $image-2x, $width, $height) {
+	background-image: url($image-1x);
+	background-size: $width $height;
+
+	@media (-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		& {
+			background-image: url($image-2x);
+		}
+	}
+}

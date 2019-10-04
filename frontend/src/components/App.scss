@@ -1,0 +1,14 @@
+.skip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	overflow: hidden;
+	font-size: 1.5rem;
+
+	&:focus {
+		height: 30px;
+		padding: 8px;
+		background-color: white;
+	}
+}
