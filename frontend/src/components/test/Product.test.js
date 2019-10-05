@@ -1,6 +1,9 @@
 import React from "react";
-import { cleanup, render, getByAltText, getByTitle } from "@testing-library/react";
-import Product from "../Product";
+import {
+	cleanup,
+	render
+} from "@testing-library/react";
+import { Product } from "../Product";
 
 // automatically unmount and cleanup DOM after the test is finished.
 afterEach(cleanup);
@@ -23,13 +26,13 @@ describe("Product component", () => {
 			<Product item={item} />
 		);
 
-        const productImg = getByAltText(item.title)
-        expect(productImg).toBeDefined();
-        
-        const buyBtn = getByTitle(`Comprar ${item.title}`);
-        expect(buyBtn).toBeDefined();
+		const productImg = getByAltText(item.title);
+		expect(productImg).toBeDefined();
 
-        const title = getByText(item.title);
-        expect(title).toBeDefined();
+		const buyBtn = getByTitle(`Comprar ${item.title}`);
+		expect(buyBtn).toBeDefined();
+
+		const title = getByText(item.title);
+		expect(title).toBeDefined();
 	});
 });

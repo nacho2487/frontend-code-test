@@ -1,6 +1,6 @@
 import React from "react";
 import { cleanup, fireEvent, render } from "@testing-library/react";
-import SearchBar from "../SearchBar";
+import { SearchBar } from "../SearchBar";
 
 // automatically unmount and cleanup DOM after the test is finished.
 afterEach(cleanup);

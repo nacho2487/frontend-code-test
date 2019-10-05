@@ -1,22 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import "./SearchResults.scss";
 import SearchResultsItem from "./SearchResultsItem";
 
-function SearchResults({ results }) {
-  return (
-    <ol className="search-results">
-      {results.items.map(item => (
-        <li className="search-results-item" key={item.id}>
-          <SearchResultsItem item={item} />
-        </li>
-      ))}
-    </ol>
-  );
+export function SearchResults({ results = [] }) {
+	return (
+		<ol className="search-results">
+			{results.map(item => (
+				<li className="search-results-item" key={item.id}>
+					<SearchResultsItem item={item} />
+				</li>
+			))}
+		</ol>
+	);
 }
 
 SearchResults.propTypes = {
-  results: PropTypes.object.isRequired
+	results: PropTypes.array.isRequired
 };
 
-export default SearchResults;
+const mapStateToProps = ({ searchResults }) => ({
+	results: searchResults
+});
+
+export default connect(mapStateToProps)(SearchResults);
