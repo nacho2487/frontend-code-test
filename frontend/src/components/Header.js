@@ -1,5 +1,5 @@
 import React from "react";
-import { APP_ROOT_ELEMENT_ID } from "../constants/identifiers";
+import { APP_ROOT_ELEMENT_ID } from "../constants";
 import SearchBar from "./SearchBar";
 import "./Header.scss";
 import Logo from "../assets/Logo_ML.png";

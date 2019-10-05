@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import "./SearchBar.scss";
+import { getSearchQuery } from "../selectors/router";
 
 export function SearchBar(props) {
 	const [query, setQuery] = useState(props.query || "");
@@ -46,12 +47,7 @@ SearchBar.propTypes = {
 	onFetchProducts: PropTypes.func
 };
 
-const mapStateToProps = ({ router }) => {
-  const urlParms = new URLSearchParams(router.location.search)
-	return {
-		query: urlParms.get("search")
-	};
-};
+const mapStateToProps = state => ({ query: getSearchQuery(state) || "" });
 
 const mapDispatchToProps = dispatch => ({
 	onFetchProducts: id =>
