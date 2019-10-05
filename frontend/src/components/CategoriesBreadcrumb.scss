@@ -1,0 +1,19 @@
+.categories-breadcrumb {
+  margin-top: var(--spacing-small);
+  display: flex;
+  font-size: 0.875rem;
+  color: var(--gray);
+
+  &-separator {
+    padding: 0 5px;
+  }
+
+  &-text {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &-item:last-child &-text {
+    font-weight: bolder;
+  }
+}

@@ -16,7 +16,6 @@ describe("SearchResultsItem component", () => {
   };
 
   it("Renders an item", () => {
-    item.title = "a";
     const { getByAltText, getByText } = render(
       <SearchResultsItem item={item} />
     );
