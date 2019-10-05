@@ -1,0 +1,39 @@
+.search-result-item {
+  &-photo {
+    display: block;
+    max-width: 100%;
+    width: 180px;
+    object-fit: contain;
+    background-color: var(--light);
+    border-radius: var(--border-radius-small);
+  }
+
+  &-info {
+    margin-left: var(--spacing-small);
+
+    &-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: var(--spacing-small);
+      margin-bottom: var(--spacing-big);
+    }
+  }
+
+  &-price {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 5px;
+  }
+
+  &-free-shipping {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+  }
+
+  &-title {
+    font-size: 1.125rem;
+  }
+}

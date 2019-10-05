@@ -18,7 +18,7 @@ function SearchBar(props) {
   };
 
   return (
-    <form className="bar-search col-10 pl-0" onSubmit={onSubmit}>
+    <form className="bar-search col-10 col-md-9 pl-0" onSubmit={onSubmit}>
       <input
         aria-label="Ingresa lo que quieras encontrar"
         autoFocus
