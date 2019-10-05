@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { APP_ROOT_ELEMENT_ID } from "../constants";
 import SearchBar from "./SearchBar";
 import "./Header.scss";
@@ -17,7 +18,7 @@ function Header() {
           >
             Ir al contenido principal
           </a>
-          <a href="/" className="col-auto col-md-1 offset-md-1 pr-md-0">
+          <Link to="/" className="col-auto col-md-1 offset-md-1 pr-md-0">
             <img
               alt="Mercado Libre"
               title="Mercado Libre Uruguay - Donde compras y vendes de todo"
@@ -25,7 +26,7 @@ function Header() {
               src={Logo}
               srcSet={`${Logo} 1x, ${Logo_2x} 2x`}
             />
-          </a>
+          </Link>
           <SearchBar />
         </div>
       </div>

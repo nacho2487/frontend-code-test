@@ -1,6 +1,10 @@
+import { SEARCH_RESULTS_ADD } from "../constants/actionTypes";
+
 export default function searchResults(state = [], action) {
-	switch (action.type) {
-		default:
-			return state;
-	}
+  switch (action.type) {
+    case SEARCH_RESULTS_ADD:
+      return action.searchResults;
+    default:
+      return state;
+  }
 }
