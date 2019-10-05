@@ -82,6 +82,7 @@ ul {
   margin-right: calc(var(--gutter) * -1);
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .no-gutters {
@@ -91,6 +92,10 @@ ul {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
 }
 
 .col {
@@ -183,4 +188,12 @@ ul {
   border: 0;
   background-color: var(--light);
   cursor: pointer;
+}
+
+.btn-success {
+  background-color: var(--success);
+  color: var(--white);
+  border-radius: var(--border-radius-small);
+  padding: 12px;
+  font-size: 1.5rem;
 }

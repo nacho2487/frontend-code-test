@@ -1,11 +1,8 @@
+@import "./mixins";
+
 .search-result-item {
   &-photo {
-    display: block;
-    max-width: 100%;
-    width: 180px;
-    object-fit: contain;
-    background-color: var(--light);
-    border-radius: var(--border-radius-small);
+    @include photo(180px);
   }
 
   &-info {

@@ -1,0 +1,51 @@
+@import "./mixins";
+
+.product {
+  padding: var(--spacing-big);
+  color: var(--dark);
+
+  &-header {
+    &-description {
+      margin-bottom: var(--spacing-big);
+      font-size: 1.75rem;
+    }
+
+    &-title {
+      margin-bottom: var(--spacing-big);
+      font-size: 1.5rem;
+    }
+  }
+
+  &-price {
+    font-size: 2.875rem;
+    margin-bottom: var(--spacing-big);
+
+    &-decimal {
+        display: none;
+    }
+
+    &-fraction {
+        vertical-align: super;
+        font-size: 1.5rem;
+    }
+  }
+
+  &-picture {
+    @include photo(680px);
+  }
+
+  &-conditions {
+    margin-bottom: var(--spacing-small);
+    font-size: 0.875rem;
+  }
+
+  &-description {
+    white-space: pre-line;
+    font-size: 1rem;
+    color: var(--gray-dark);
+  }
+
+  &-btn-buy {
+      width: 100%;
+  }
+}

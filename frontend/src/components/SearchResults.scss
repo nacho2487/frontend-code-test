@@ -1,10 +1,7 @@
 .search-results {
-  background-color: var(--white);
-  border-radius: var(--border-radius-small);
-
   &-item {
     padding: var(--spacing-small) 0;
-    margin: var(--spacing-small);
+    margin: 0 var(--spacing-small);
     border-bottom: 1px solid var(--light);
 
     &:last-child {

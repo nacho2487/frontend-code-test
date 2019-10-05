@@ -1,14 +1,7 @@
-.skip {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 0;
-	overflow: hidden;
-	font-size: 1.5rem;
-
-	&:focus {
-		height: 30px;
-		padding: 8px;
-		background-color: white;
-	}
+.app {
+  &-body {
+    background-color: var(--white);
+    border-radius: var(--border-radius-small);
+    margin: var(--spacing-small) 0;
+  }
 }

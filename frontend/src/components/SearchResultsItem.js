@@ -3,8 +3,11 @@ import PropTypes from "prop-types";
 import "./SearchResultsItem.scss";
 import IconShipping from "../assets/ic_shipping.png";
 import IconShipping_2x from "../assets/ic_shipping@2x.png";
+import { currencyToFormattedString } from "../util/currency";
 
 function SearchResultsItem({ item }) {
+  const { price } = item;
+  const priceText = currencyToFormattedString(price.currency, price.amount);
   return (
     <div className="row no-gutters">
       <div className="col-3">
@@ -16,9 +19,7 @@ function SearchResultsItem({ item }) {
       </div>
       <div className="search-result-item-info col-7 col-md-8">
         <div className="search-result-item-info-header">
-          <div className="search-result-item-price">
-            {`${item.price.currency} ${item.price.amount}`}
-          </div>
+          <div className="search-result-item-price">{priceText}</div>
           {item.free_shipping && (
             <img
               className="search-result-item-free-shipping"
