@@ -7,28 +7,29 @@ $COLUMNS_COUNT: 12;
 $COLUMN_WIDTH: 8.333333%;
 
 :root {
-  --primary: #ffe600;
-  --success: #3483fa;
-  --dark: #333;
-  --gray-dark: #666;
-  --gray: #999;
-  --light: #eee;
-  --white: white;
-  --spacing-small: 14px;
-  --spacing-big: 28px;
-  --gutter: 9px;
-  --border-radius-small: 4px;
-  font-size: 12px;
+	--primary: #ffe600;
+	--success: #3483fa;
+	--dark: #333;
+	--gray-dark: #666;
+	--gray: #999;
+	--light: #eee;
+	--white: white;
+	--spacing-small: 14px;
+	--spacing-big: 28px;
+	--gutter: 9px;
+	--border-radius-small: 4px;
+	font-size: 12px;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--light);
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	color: var(--dark);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--light);
 }
 // Resets
 blockquote,
@@ -40,129 +41,129 @@ h4,
 ol,
 p,
 ul {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 menu,
 ol,
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 // Basic grid system
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 
-  @media (min-width: $BREAKPOINT_MEDIUM) {
-    & {
-      max-width: 100%;
-    }
-  }
+	@media (min-width: $BREAKPOINT_MEDIUM) {
+		& {
+			max-width: 100%;
+		}
+	}
 
-  @media (min-width: $BREAKPOINT_LARGE) {
-    & {
-      max-width: 960px;
-    }
-  }
+	@media (min-width: $BREAKPOINT_LARGE) {
+		& {
+			max-width: 960px;
+		}
+	}
 }
 
 .row {
-  margin-left: calc(var(--gutter) * -1);
-  margin-right: calc(var(--gutter) * -1);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+	margin-left: calc(var(--gutter) * -1);
+	margin-right: calc(var(--gutter) * -1);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .no-gutters {
-  margin-left: 0;
-  margin-right: 0;
-  & > [class*="col-"] {
-    padding-left: 0;
-    padding-right: 0;
-  }
+	margin-left: 0;
+	margin-right: 0;
+	& > [class*="col-"] {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .no-wrap {
-  flex-wrap: nowrap;
+	flex-wrap: nowrap;
 }
 
 .col {
-  padding-left: var(--gutter);
-  padding-right: var(--gutter);
-  width: 100%;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+	width: 100%;
 }
 
 .pl-0 {
-  padding-left: 0;
+	padding-left: 0;
 }
 
 .pr-0 {
-  padding-right: 0;
+	padding-right: 0;
 }
 
 .col-auto {
-  @extend .col;
-  flex: 0 0 auto;
-  width: auto;
-  max-width: 100%;
+	@extend .col;
+	flex: 0 0 auto;
+	width: auto;
+	max-width: 100%;
 }
 
 @for $i from 1 through $COLUMNS_COUNT {
-  .col-#{$i},
-  .col-md-#{$i},
-  .col-lg-#{$i} {
-    @extend .col;
-  }
+	.col-#{$i},
+	.col-md-#{$i},
+	.col-lg-#{$i} {
+		@extend .col;
+	}
 
-  .col-#{$i} {
-    flex: 0 0 $i * $COLUMN_WIDTH;
-    max-width: $i * $COLUMN_WIDTH;
-  }
+	.col-#{$i} {
+		flex: 0 0 $i * $COLUMN_WIDTH;
+		max-width: $i * $COLUMN_WIDTH;
+	}
 
-  .offset-#{$i} {
-    margin-left: $i * $COLUMN_WIDTH;
-  }
+	.offset-#{$i} {
+		margin-left: $i * $COLUMN_WIDTH;
+	}
 }
 
 @mixin define-columns($breakpoint, $prefix) {
-  @media (min-width: $breakpoint) {
-    .col-#{$prefix}-auto {
-      flex: 0 0 auto;
-      width: auto;
-      max-width: 100%;
-    }
+	@media (min-width: $breakpoint) {
+		.col-#{$prefix}-auto {
+			flex: 0 0 auto;
+			width: auto;
+			max-width: 100%;
+		}
 
-    .pl-#{$prefix}-0 {
-      padding-left: 0;
-    }
+		.pl-#{$prefix}-0 {
+			padding-left: 0;
+		}
 
-    .pr-#{$prefix}-0 {
-      padding-right: 0;
-    }
+		.pr-#{$prefix}-0 {
+			padding-right: 0;
+		}
 
-    @for $i from 0 through $COLUMNS_COUNT {
-      .col-#{$prefix}-#{$i} {
-        flex: 0 0 $i * $COLUMN_WIDTH;
-        max-width: $i * $COLUMN_WIDTH;
-      }
+		@for $i from 0 through $COLUMNS_COUNT {
+			.col-#{$prefix}-#{$i} {
+				flex: 0 0 $i * $COLUMN_WIDTH;
+				max-width: $i * $COLUMN_WIDTH;
+			}
 
-      .offset-#{$prefix}-#{$i} {
-        margin-left: $i * $COLUMN_WIDTH;
-      }
-    }
-  }
+			.offset-#{$prefix}-#{$i} {
+				margin-left: $i * $COLUMN_WIDTH;
+			}
+		}
+	}
 }
 
 @include define-columns($BREAKPOINT_MEDIUM, "md");
@@ -170,30 +171,30 @@ ul {
 
 // Field
 .field {
-  border: 0;
-  border-radius: var(--border-radius-small);
-  padding-left: var(--gutter);
-  padding-right: var(--gutter);
-  outline: none;
-  background-color: var(--white);
+	border: 0;
+	border-radius: var(--border-radius-small);
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+	outline: none;
+	background-color: var(--white);
 
-  &::placeholder {
-    color: var(--gray-dark);
-    text-overflow: ellipsis;
-  }
+	&::placeholder {
+		color: var(--gray-dark);
+		text-overflow: ellipsis;
+	}
 }
 
 // Button
 .btn {
-  border: 0;
-  background-color: var(--light);
-  cursor: pointer;
+	border: 0;
+	background-color: var(--light);
+	cursor: pointer;
 }
 
 .btn-success {
-  background-color: var(--success);
-  color: var(--white);
-  border-radius: var(--border-radius-small);
-  padding: 12px;
-  font-size: 1.5rem;
+	background-color: var(--success);
+	color: var(--white);
+	border-radius: var(--border-radius-small);
+	padding: 12px;
+	font-size: 1.5rem;
 }

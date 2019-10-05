@@ -1,8 +1,6 @@
 import React from "react";
-import {
-	cleanup,
-	render
-} from "@testing-library/react";
+import { cleanup, render } from "@testing-library/react";
+import { BrowserRouter as Router } from "react-router-dom";
 import { Product } from "../Product";
 
 // automatically unmount and cleanup DOM after the test is finished.
@@ -22,9 +20,14 @@ describe("Product component", () => {
 	};
 
 	it("Renders the product", () => {
+		const fetchProduct = jest.fn();
 		const { getByAltText, getByText, getByTitle } = render(
-			<Product item={item} />
+			<Router>
+				<Product item={item} id={item.id} isFetching={false} fetchProduct={fetchProduct} />
+			</Router>
 		);
+
+		expect(fetchProduct).toHaveBeenCalled();
 
 		const productImg = getByAltText(item.title);
 		expect(productImg).toBeDefined();

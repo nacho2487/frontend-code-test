@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import "./SearchResults.scss";
 import SearchResultsItem from "./SearchResultsItem";
+import { doFetchSearchResults } from "../actions/searchResults";
+import { getSearchQuery } from "../selectors/router";
+import { Loading } from "./Loading";
 
-export function SearchResults({ results = [] }) {
+export function SearchResults({ isFetching, query, results = [], fetchSearchResults }) {
+	useEffect(() => {
+		fetchSearchResults(query);
+	}, [query, fetchSearchResults]);
+
+	if (isFetching) {
+		return <Loading count="3" />;
+	}
+
+	if (results.length === 0) {
+		return <div className="search-results-empty">No se encontraron productos. Intenta con otra búsqueda.</div>
+	}
+
 	return (
 		<ol className="search-results">
 			{results.map(item => (
@@ -17,11 +32,23 @@ export function SearchResults({ results = [] }) {
 }
 
 SearchResults.propTypes = {
-	results: PropTypes.array.isRequired
+	results: PropTypes.array.isRequired,
+	isFetching: PropTypes.bool.isRequired, 
+	query: PropTypes.string.isRequired
 };
 
-const mapStateToProps = ({ searchResults }) => ({
-	results: searchResults
+const mapStateToProps = state => {
+	const { searchResults, fetchers } = state;
+
+	return {
+		isFetching: fetchers.searchResults.isFetching,
+		query: getSearchQuery(state) || "",
+		results: searchResults
+	};
+};
+
+const mapDispatchToProps = dispatch => ({
+	fetchSearchResults: query => dispatch(doFetchSearchResults(query))
 });
 
-export default connect(mapStateToProps)(SearchResults);
+export default connect(mapStateToProps, mapDispatchToProps)(SearchResults);
