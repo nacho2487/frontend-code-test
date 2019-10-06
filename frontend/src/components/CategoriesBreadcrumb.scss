@@ -1,6 +1,7 @@
 .categories-breadcrumb {
   margin-top: var(--spacing-small);
   display: flex;
+  flex-wrap: wrap;
   font-size: 0.875rem;
   color: var(--gray);
 
