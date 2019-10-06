@@ -19,7 +19,7 @@ function SearchResultsItem({ item }) {
             alt={item.title}
           />
         </div>
-        <div className="search-result-item-info col-7 col-md-8">
+        <div className="search-result-item-info col-7">
           <div className="search-result-item-info-header">
             <div className="search-result-item-price">{priceText}</div>
             {item.free_shipping && (
@@ -34,7 +34,7 @@ function SearchResultsItem({ item }) {
           </div>
           <div className="search-result-item-title">{item.title}</div>
         </div>
-        <div className="search-result-item-area col-2 col-md-1" />
+        <div className="search-result-item-area col-2">{item.state}</div>
       </div>
     </Link>
   );

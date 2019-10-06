@@ -21,6 +21,7 @@ describe("MercadoLibre response mapping", () => {
           picture:
             "http://mla-s1-p.mlstatic.com/908135-MLA31018116481_062019-I.jpg",
           condition: "new",
+          state: "Capital Federal",
           free_shipping: false
         },
         {
@@ -30,6 +31,7 @@ describe("MercadoLibre response mapping", () => {
           picture:
             "http://mla-s2-p.mlstatic.com/811424-MLA31241761908_062019-I.jpg",
           condition: "new",
+          state: "Capital Federal",
           free_shipping: true
         },
         {
@@ -39,6 +41,7 @@ describe("MercadoLibre response mapping", () => {
           picture:
             "http://mla-s2-p.mlstatic.com/987401-MLA31123862015_062019-I.jpg",
           condition: "new",
+          state: "Buenos Aires",
           free_shipping: false
         },
         {
@@ -48,6 +51,7 @@ describe("MercadoLibre response mapping", () => {
           picture:
             "http://mla-s1-p.mlstatic.com/792057-MLA31112647287_062019-I.jpg",
           condition: "new",
+          state: "Capital Federal",
           free_shipping: false
         }
       ]
@@ -68,6 +72,7 @@ describe("MercadoLibre response mapping", () => {
         picture:
           "http://mla-s1-p.mlstatic.com/908135-MLA31018116481_062019-I.jpg",
         condition: "new",
+        state: "Capital Federal",
         free_shipping: false,
         sold_quantity: 1049,
         description: "Diseñador: Simón de la Costa"

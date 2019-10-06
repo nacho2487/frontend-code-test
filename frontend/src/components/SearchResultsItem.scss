@@ -11,8 +11,6 @@
   }
 
   &-info {
-    margin-left: var(--spacing-small);
-
     &-header {
       display: flex;
       flex-direction: row;
@@ -26,6 +24,7 @@
     display: inline-block;
     font-size: 1.5rem;
     margin-right: 5px;
+    margin-left: var(--spacing-small);
   }
 
   &-free-shipping {
@@ -37,5 +36,10 @@
 
   &-title {
     font-size: 1.125rem;
+    margin-left: var(--spacing-small);
+  }
+
+  &-area {
+    margin-top: var(--spacing-small);
   }
 }

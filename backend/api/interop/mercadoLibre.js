@@ -86,6 +86,7 @@ function mapItem({
 	currency_id,
 	id,
 	price,
+	seller_address,
 	shipping,
 	thumbnail,
 	title
@@ -100,7 +101,8 @@ function mapItem({
 		},
 		picture: thumbnail,
 		condition,
-		free_shipping: shipping.free_shipping
+		free_shipping: shipping.free_shipping,
+		state: seller_address.state.name
 	};
 }
 
