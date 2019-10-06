@@ -106,8 +106,8 @@ Algunas mejoras que hubiera sido interesante explorar para mejorar la performanc
 
 ## Otros
 
-### Google Chrome Audits
+### Google Lighthouse
 
-Se corrieron los audits de las development tools de Google Chrome sobre la aplicación, en modo desktop y mobile, obteniéndose puntuaciones excelentes en accesibilidad, SEO y uso de "best practices".
+Se corrieron los audits Google Lighthouse sobre la aplicación, en modo desktop y mobile, obteniéndose puntuaciones excelentes en accesibilidad, SEO y uso de "best practices".
 
 En el caso del audit de accesibilidad, la única observación tiene que ver con la falta de contraste en algunos texto. Esto se podría mejorar fácilmente ajustando algunos colores para lograr mejor contraste, pero se buscó respetar el diseño provisto al máximo.
