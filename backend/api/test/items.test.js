@@ -9,7 +9,7 @@ describe("GET /api/items?q=​:query", () => {
   it("should return an error when no query is specified", async () => {
     const res = await request(app).get("/api/items");
     expect(res.statusCode).toEqual(422);
-    expect(res.body).toHaveProperty("errors");
+    expect(res.body).toHaveProperty("details.errors");
   });
 
   it("should succesfully return the result of querying for 'zapato'", async () => {

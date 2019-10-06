@@ -13,7 +13,7 @@ describe("GET /api/items/:id", () => {
   it("should return an error when no id is specified", async () => {
     const res = await request(app).get("/api/items/");
     expect(res.statusCode).toEqual(422);
-    expect(res.body).toHaveProperty("errors");
+    expect(res.body).toHaveProperty("details.errors");
   });
 
   it("should succesfully return the result fetching by id", async () => {

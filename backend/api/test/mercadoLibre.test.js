@@ -12,7 +12,7 @@ describe("MercadoLibre response mapping", () => {
     );
     expect(mappedResponse).toEqual({
       author: { name: "nico", lastname: "card" },
-      categories: ["Calzado"],
+      categories: ["Ropa y Accesorios", "Calzado"],
       items: [
         {
           id: "MLA688322496",
@@ -69,6 +69,7 @@ describe("MercadoLibre response mapping", () => {
           "http://mla-s1-p.mlstatic.com/908135-MLA31018116481_062019-I.jpg",
         condition: "new",
         free_shipping: false,
+        sold_quantity: 1049,
         description: "Diseñador: Simón de la Costa"
       }
     });
