@@ -14,8 +14,8 @@ function SearchResultsItem({ item }) {
       <div className="row no-gutters">
         <div className="col-3">
           <img
-            className="search-result-item-photo"
-            src={item.picture}
+            className="search-result-item-photo lazyload"
+            data-src={item.picture}
             alt={item.title}
           />
         </div>

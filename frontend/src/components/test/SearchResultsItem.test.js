@@ -25,7 +25,7 @@ describe("SearchResultsItem component", () => {
 
     const itemImg = getByAltText(item.title);
     expect(itemImg).toBeDefined();
-    expect(itemImg.getAttribute("src")).toBe(item.picture);
+    expect(itemImg.getAttribute("data-src")).toBe(item.picture);
 
     const freeShippingImg = getByAltText("Envío gratis");
     expect(freeShippingImg).toBeDefined();
