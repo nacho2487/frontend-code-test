@@ -28,6 +28,7 @@ function SearchResultsItem({ item }) {
                 src={IconShipping}
                 srcSet={`${IconShipping} 1x, ${IconShipping_2x} 2x`}
                 alt="Envío gratis"
+                title="Envío gratis"
               />
             )}
           </div>
