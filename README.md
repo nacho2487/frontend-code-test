@@ -29,6 +29,8 @@ Luego:
 npm run dev
 ```
 
+Finalmente, abrir http://localhost:3000 en el navegador.
+
 ## Ejecutar los tests
 
 ### Backend
@@ -45,6 +47,10 @@ npm test
 ```
 
 # Comentarios sobre el ejercicio
+
+El proyecto consta de dos paquetes, uno para el backend y otro para el frontend. El paquete del backend está en el raíz del repositorio, mientras que el paquete del frontend está bajo el directorio `frontend`.
+
+Ejecutando el comando `npm run dev` en el paquete backend se levanta tanto el servidor Express como la aplicación React. Se puede probar la aplicación accediendo a http://localhost:3000.
 
 En la letra del ejercicio se pide que al resolver el problema, se tengan en cuenta aspectos de **Usabilidad**, **SEO**, **Performance** y **Escalabilidad**. 
 
