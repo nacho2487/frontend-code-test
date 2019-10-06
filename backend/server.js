@@ -17,19 +17,19 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 if (!isTest) {
-	app.listen(port, () => appLogger.info(`Listening on port ${port}`));
+  app.listen(port, () => appLogger.info(`Listening on port ${port}`));
 }
 
 app.use("/api", router);
 
 if (isProduction) {
-	// Serve any static files
-	app.use(express.static(path.join(__dirname, "../frontend/build")));
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-	// Handle React routing, return all requests to React app
-	app.get("*", function(req, res) {
-		res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
-	});
+  // Handle React routing, return all requests to React app
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
+  });
 }
 
 module.exports = app;

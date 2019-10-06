@@ -4,24 +4,24 @@ const errorHandler = require("./util/error-handling");
 const mercadoLibreInterop = require("./interop/mercadoLibre");
 
 async function items(req, res, next) {
-	try {
-		const query = req.query.q;
-		const response = await mercadoLibreInterop.queryItems(query);
+  try {
+    const query = req.query.q;
+    const response = await mercadoLibreInterop.queryItems(query);
 
-		res.json(mercadoLibreInterop.mapQueryItems(response));
-	} catch (error) {
-		next(error);
-	}
+    res.json(mercadoLibreInterop.mapQueryItems(response));
+  } catch (error) {
+    next(error);
+  }
 }
 
 const itemsValidator = defineValidator([
-	query("q")
-		.isString()
-		.withMessage("Only letters and digits allowed in query.")
-		.trim()
-		.not()
-		.isEmpty()
-		.withMessage("A query must be specified")
+  query("q")
+    .isString()
+    .withMessage("Only letters and digits allowed in query.")
+    .trim()
+    .not()
+    .isEmpty()
+    .withMessage("A query must be specified")
 ]);
 
 module.exports = [itemsValidator, items, errorHandler];

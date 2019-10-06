@@ -11,25 +11,25 @@ import Body from "./Body";
 const store = configureStore();
 
 function App() {
-	return (
-		<Provider store={store}>
-			<ConnectedRouter history={history}>
-				<div className="App">
-					<Header />
-					<main className="container" role="main" id={`${APP_ROOT_ELEMENT_ID}`}>
-						<div className="row no-gutters">
-							<div className="col-10 offset-1">
-								<CategoriesBreadcrumb />
-								<div className="app-body">
-									<Body />
-								</div>
-							</div>
-						</div>
-					</main>
-				</div>
-			</ConnectedRouter>
-		</Provider>
-	);
+  return (
+    <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <div className="App">
+          <Header />
+          <main className="container" role="main" id={`${APP_ROOT_ELEMENT_ID}`}>
+            <div className="row no-gutters">
+              <div className="col-10 offset-1">
+                <CategoriesBreadcrumb />
+                <div className="app-body">
+                  <Body />
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </ConnectedRouter>
+    </Provider>
+  );
 }
 
 export default App;
