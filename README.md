@@ -64,6 +64,7 @@ A continuación, se detallan algunas acciones concretas que se tomaron para que 
 - Favicon
 - `lang` attribute en `html` tag
 - Mensajes de error cuando hay errores en llamadas a las APIs
+- Mensaje cuando la búsqueda no arroja resultados
 - Diseño responsivo
 
 ### SEO
@@ -103,6 +104,7 @@ Algunas mejoras que hubiera sido interesante explorar para mejorar la performanc
 - Hacer preloading y prefetching de recursos o de llamadas a las APIs, anticipando las intenciones del usuario.
 - Implementar un middleware en Express para cachear las respuestas de los distintos endpoints
 - Documentar API con OpenAPI
+- Analytics y logging en el frontend
 
 ## Otros
 
